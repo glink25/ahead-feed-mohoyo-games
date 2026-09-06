@@ -170,4 +170,3 @@ events:
       byMonthDay: [1]
       timezone: Asia/Shanghai
     tags: [endgame]
-status: active

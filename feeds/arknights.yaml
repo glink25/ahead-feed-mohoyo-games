@@ -35,15 +35,10 @@ events:
         source: Arknights Global official event notice
     tags: [story]
     evidence:
-      - kind: url
-        value: https://www.arknights.global/
-      - kind: url
-        value: https://www.youtube.com/watch?v=FfcCvZulM8Q
-        label: { zh-CN: 明日方舟官方 YouTube 图片来源, en: Official Arknights YouTube image source }
-    media: &arknights_media
-      - kind: image
-        path: https://i.ytimg.com/vi/FfcCvZulM8Q/hqdefault.jpg
-        alt: { zh-CN: 明日方舟官方宣传片缩略图, en: Arknights official trailer thumbnail }
+      - { kind: url, value: 'https://www.arknights.global/' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=wvkzJJZFzsA' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/wvkzJJZFzsA/maxresdefault.jpg', alt: { zh-CN: 明日方舟 The Masses' Travels 官方动画 PV 主视觉, en: The Masses' Travels official animation key visual } }
   - id: act-or-die
     title: { zh-CN: Side Story「Act or Die」开启, en: Act or Die Side Story }
     schedule:
@@ -53,7 +48,9 @@ events:
         confidence: confirmed
         source: Arknights Global official event notice
     tags: [story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=mmTeE2XXdxw' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/mmTeE2XXdxw/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Act or Die 官方动画 PV 主视觉, en: Act or Die official animation key visual } }
   - id: ato-sixth-anniversary
     title: { zh-CN: 「Ato」六周年庆典开启, en: Ato 6th Anniversary Celebration }
     schedule:
@@ -63,7 +60,9 @@ events:
         confidence: confirmed
         source: Arknights Global official anniversary notice
     tags: [anniversary, story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=tYXYA0-IgC0' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/tYXYA0-IgC0/maxresdefault.jpg', alt: { zh-CN: 明日方舟六周年官方直播主视觉, en: Arknights 6th Anniversary official livestream visual } }
   - id: ave-mujica-collab
     title: { zh-CN: 明日方舟 × BanG Dream! Ave Mujica 联动开启, en: Arknights x BanG Dream! Ave Mujica Collaboration }
     schedule:
@@ -73,7 +72,9 @@ events:
         confidence: confirmed
         source: Arknights Global official collaboration notice
     tags: [collaboration, story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=WlcRYanJi00' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/WlcRYanJi00/maxresdefault.jpg', alt: { zh-CN: 明日方舟 × Ave Mujica 官方联动主视觉, en: Arknights x Ave Mujica official collaboration visual } }
   - id: episode-16
     title: { zh-CN: 主线 Episode 16 开启, en: Arknights Episode 16 Opens }
     schedule:
@@ -83,7 +84,9 @@ events:
         confidence: confirmed
         source: Global release schedule
     tags: [main-story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.arknights.global/' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/tYXYA0-IgC0/maxresdefault.jpg', alt: { zh-CN: 明日方舟六周年官方主视觉（Episode 16 配图）, en: Arknights 6th Anniversary official visual used for Episode 16 } }
   - id: retracing-our-steps
     title: { zh-CN: 2026 感谢庆典「Retracing Our Steps」开启, en: Retracing Our Steps 2026 Thank-You Celebration }
     schedule:
@@ -93,7 +96,9 @@ events:
         confidence: confirmed
         source: Arknights Global official celebration notice
     tags: [story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=d5YygAfOqyk' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/d5YygAfOqyk/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Retracing Our Steps 官方主视觉, en: Retracing Our Steps official key visual } }
   - id: stronghold-protocol-alliance
     title:
       zh-CN: 高难玩法「Stronghold Protocol：Alliance」开启
@@ -105,7 +110,9 @@ events:
         confidence: confirmed
         source: Arknights Global official notice
     tags: [endgame]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=fiuuCvLgcsw' }]
+    media:
+      - &ark_sp { kind: image, path: 'https://i.ytimg.com/vi/fiuuCvLgcsw/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Stronghold Protocol：Alliance 官方主视觉, en: Stronghold Protocol Alliance official key visual } }
   - id: medjehtiqedti-bound
     title: { zh-CN: Side Story「Medjehtiqedti Bound」开启, en: Medjehtiqedti Bound Side Story }
     schedule:
@@ -115,7 +122,9 @@ events:
         confidence: confirmed
         source: Arknights Global official event notice
     tags: [story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=8lvhVy-XI80' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/8lvhVy-XI80/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Medjehtiqedti Bound 官方主视觉, en: Medjehtiqedti Bound official key visual } }
   - id: vector-breakthrough-2
     title:
       zh-CN: 「Vector Breakthrough #2」开启
@@ -127,7 +136,11 @@ events:
         confidence: confirmed
         source: Arknights Global official notice
     tags: [endgame]
-    media: *arknights_media
+    evidence:
+      - { kind: url, value: 'https://www.arknights.global/news/4084' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=Uvs9VCxWPKo' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/Uvs9VCxWPKo/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Vector Breakthrough #2 官方主视觉, en: Vector Breakthrough #2 official key visual } }
   - id: stronghold-protocol-alliance-part-2
     title:
       zh-CN: 「Stronghold Protocol：Alliance」第二期开启
@@ -139,7 +152,7 @@ events:
         confidence: confirmed
         source: Arknights Global event notice
     tags: [endgame]
-    media: *arknights_media
+    media: [*ark_sp]
   - id: when-elegies-are-ashes-rerun
     title: { zh-CN: 「When Elegies Are Ashes」复刻开启, en: When Elegies Are Ashes Rerun }
     schedule:
@@ -149,7 +162,11 @@ events:
         confidence: confirmed
         source: Arknights Global official announcement
     tags: [rerun, story]
-    media: *arknights_media
+    evidence:
+      - { kind: url, value: 'https://yostar-pictures.co.jp/works/detail/3046/?lang=en' }
+      - { kind: url, value: 'https://www.arknights.global/news' }
+    media:
+      - { kind: image, path: 'https://yostar-pictures.co.jp/wp/wp-content/uploads/2025/08/thumbnail_ark_99-1024x576.png', alt: { zh-CN: Yostar Pictures 制作的 When Elegies Are Ashes 官方动画主视觉, en: Official When Elegies Are Ashes animation visual by Yostar Pictures } }
   - id: people-a-people
     title:
       zh-CN: 「People, A People」全球服预计开启
@@ -164,7 +181,9 @@ events:
         confidence: likely
         source: Published server schedule comparison; awaiting Global official notice
     tags: [story]
-    media: *arknights_media
+    evidence: [{ kind: url, value: 'https://www.arknights.global/' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/8lvhVy-XI80/maxresdefault.jpg', alt: { zh-CN: 明日方舟近期官方 Side Story 主视觉（待全球服正式海报公布后替换）, en: Recent official Side Story visual pending Global poster } }
   - id: critical-phase-transition
     title: { zh-CN: 主线「Critical Phase Transition」全球服预计开启, en: Critical Phase Transition Expected Global Release }
     summary:
@@ -177,4 +196,8 @@ events:
         confidence: likely
         source: Published server schedule comparison; awaiting Global official notice
     tags: [main-story]
-    media: *arknights_media
+    evidence:
+      - { kind: url, value: 'https://www.youtube.com/watch?v=7fgQwLzKoz0' }
+      - { kind: url, value: 'https://www.arknights.global/' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/7fgQwLzKoz0/maxresdefault.jpg', alt: { zh-CN: Critical Phase Transition 3D 动画主视觉（非全球服官方频道转载）, en: Critical Phase Transition 3D animation visual from a permitted repost source } }

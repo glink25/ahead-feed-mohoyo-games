@@ -151,7 +151,9 @@ events:
     tags: [rerun, story]
     media: *arknights_media
   - id: people-a-people
-    title: { zh-CN: 「People, A People」全球服预计开启, en: People A People Expected Global Release }
+    title:
+      zh-CN: 「People, A People」全球服预计开启
+      en: People A People Expected Global Release
     summary:
       zh-CN: 全球服日期尚未正式官宣，当前日期为排期推定，需等待 Yostar 最终公告。
       en: Global date is not officially announced and should be replaced by Yostar's final notice.

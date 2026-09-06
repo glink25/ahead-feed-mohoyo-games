@@ -27,15 +27,10 @@ events:
         source: Version 2.3 Pre-Download & Update Notice
     tags: [version]
     evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/41722094
-      - kind: url
-        value: https://www.youtube.com/watch?v=ew9nVnCl8AY
-        label: { zh-CN: 绝区零官方 YouTube 图片来源, en: Official Zenless Zone Zero YouTube image source }
-    media: &zzz_media
-      - kind: image
-        path: https://i.ytimg.com/vi/ew9nVnCl8AY/hqdefault.jpg
-        alt: { zh-CN: 绝区零官方宣传片缩略图, en: Zenless Zone Zero official trailer thumbnail }
+      - { kind: url, value: 'https://www.hoyolab.com/article/41722094' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=ew9nVnCl8AY' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/ew9nVnCl8AY/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.3 官方版本主视觉, en: Zenless Zone Zero 2.3 official version key visual } }
   - id: v2-4-update
     title: { zh-CN: 绝区零 2.4 版本更新, en: Zenless Zone Zero 2.4 Update }
     schedule:
@@ -45,7 +40,9 @@ events:
         confidence: confirmed
         source: HoYoverse release
     tags: [version]
-    media: *zzz_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=hMZVmJ8ZGto' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/hMZVmJ8ZGto/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.4 官方前瞻主视觉, en: Zenless Zone Zero 2.4 official special program visual } }
   - id: v2-5-update
     title: { zh-CN: 绝区零 2.5 版本更新, en: Zenless Zone Zero 2.5 Update }
     schedule:
@@ -55,7 +52,9 @@ events:
         confidence: confirmed
         source: HoYoverse announcement
     tags: [version]
-    media: *zzz_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=Ldeqt2WMiYM' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/Ldeqt2WMiYM/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.5 官方前瞻主视觉, en: Zenless Zone Zero 2.5 official special program visual } }
   - id: v2-6-update
     title: { zh-CN: 绝区零 2.6 版本更新, en: Zenless Zone Zero 2.6 Update }
     schedule:
@@ -65,7 +64,9 @@ events:
         confidence: confirmed
         source: HoYoverse release
     tags: [version]
-    media: *zzz_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=pMchTj9qzQY' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/pMchTj9qzQY/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.6 官方版本预告主视觉, en: Zenless Zone Zero 2.6 official teaser visual } }
   - id: v2-7-update
     title: { zh-CN: 绝区零 2.7 版本更新, en: Zenless Zone Zero 2.7 Update }
     schedule:
@@ -75,8 +76,11 @@ events:
         confidence: confirmed
         source: Version 2.7 Pre-Download & Update Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44286983' }]
-    media: *zzz_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/44286983' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=sK_s_MXs89M' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/sK_s_MXs89M/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.7 官方前瞻主视觉, en: Zenless Zone Zero 2.7 official special program visual } }
   - id: v2-8-update
     title: { zh-CN: 绝区零 2.8 版本更新, en: Zenless Zone Zero 2.8 Update }
     schedule:
@@ -86,8 +90,11 @@ events:
         confidence: confirmed
         source: Version 2.8 Pre-Download & Update Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44915538' }]
-    media: *zzz_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/44915538' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=UaqNm1F6-rI' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/UaqNm1F6-rI/maxresdefault.jpg', alt: { zh-CN: 绝区零 2.8 官方前瞻主视觉, en: Zenless Zone Zero 2.8 official special program visual } }
   - id: v3-0-update
     title: { zh-CN: 绝区零 3.0 版本更新, en: Zenless Zone Zero 3.0 Update }
     schedule:
@@ -97,8 +104,11 @@ events:
         confidence: confirmed
         source: Version 3.0 Pre-Download & Update Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/45467132' }]
-    media: *zzz_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/45467132' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=FAuF7Q4IyHE' }
+    media:
+      - &zzz_30 { kind: image, path: 'https://i.ytimg.com/vi/FAuF7Q4IyHE/maxresdefault.jpg', alt: { zh-CN: 绝区零 3.0 官方前瞻主视觉, en: Zenless Zone Zero 3.0 official special program visual } }
   - id: v3-1-update
     title: { zh-CN: 绝区零 3.1 版本更新, en: Zenless Zone Zero 3.1 Update }
     schedule:
@@ -108,8 +118,11 @@ events:
         confidence: confirmed
         source: Version 3.1 Update Announcement
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/46037106' }]
-    media: *zzz_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/46037106' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=sFlYlAhCRUM' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/sFlYlAhCRUM/maxresdefault.jpg', alt: { zh-CN: 绝区零 3.1 官方前瞻主视觉, en: Zenless Zone Zero 3.1 official special program visual } }
   - id: v3-2-special-program
     title: { zh-CN: 绝区零 3.2 版本前瞻, en: Zenless Zone Zero 3.2 Special Program }
     schedule:
@@ -119,7 +132,9 @@ events:
         confidence: confirmed
         source: HoYoverse Version 3.2 announcement
     tags: [livestream]
-    media: *zzz_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=kdGJDZb6mWk' }]
+    media:
+      - &zzz_32 { kind: image, path: 'https://i.ytimg.com/vi/kdGJDZb6mWk/maxresdefault.jpg', alt: { zh-CN: 绝区零 3.2 官方前瞻主视觉, en: Zenless Zone Zero 3.2 official special program visual } }
   - id: v3-2-update
     title: { zh-CN: 绝区零 3.2 版本更新, en: Zenless Zone Zero 3.2 Update }
     summary: { zh-CN: 已官宣于 9 月 9 日更新。, en: Announced for September 9. }
@@ -131,7 +146,7 @@ events:
         source: miHoYo / HoYoverse announcement
     tags: [version]
     evidence: [{ kind: url, value: 'https://zenless.hoyoverse.com/' }]
-    media: *zzz_media
+    media: [*zzz_32]
   - id: deadly-assault-3-0
     title: { zh-CN: 危局强袭战 3.0 周期开始, en: Deadly Assault 3.0 Rotation }
     summary:
@@ -144,4 +159,4 @@ events:
         confidence: confirmed
         source: Version 3.0 event schedule
     tags: [endgame]
-    media: *zzz_media
+    media: [*zzz_30]

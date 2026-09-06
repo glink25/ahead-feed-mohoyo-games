@@ -1,0 +1,217 @@
+oefVersion: '0.1'
+kind: event-feed
+oefSearch: oef-search-v1
+id: kuro-wuthering-waves
+name:
+  zh-CN: 鸣潮大事件日历
+  en: Wuthering Waves Major Events
+description:
+  zh-CN: 鸣潮版本更新、版本前瞻、周年与高难玩法关键节点。历史覆盖最近一年。
+  en: Wuthering Waves version updates, previews, anniversaries and endgame milestones.
+primaryLanguage: zh-CN
+tags:
+  - id: version
+    label: { zh-CN: 版本更新, en: Version Update }
+  - id: livestream
+    label: { zh-CN: 版本前瞻, en: Preview }
+  - id: endgame
+    label: { zh-CN: 高难玩法, en: Endgame }
+  - id: anniversary
+    label: { zh-CN: 周年, en: Anniversary }
+  - id: collaboration
+    label: { zh-CN: 联动, en: Collaboration }
+events:
+  - id: v2-7-preview
+    title: { zh-CN: 鸣潮 2.7 版本前瞻, en: Wuthering Waves 2.7 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2025-09-26' }
+        recordedAt: '2025-09-26T00:00:00Z'
+        confidence: confirmed
+        source: Official Wuthering Waves trailer
+    tags: [livestream]
+    evidence:
+      - kind: url
+        value: https://www.youtube.com/watch?v=cuht8zMs93E
+      - kind: url
+        value: https://www.youtube.com/watch?v=ojMnHoU79dY
+        label: { zh-CN: 鸣潮官方 YouTube 图片来源, en: Official Wuthering Waves YouTube image source }
+    media: &wuwa_media
+      - kind: image
+        path: https://i.ytimg.com/vi/ojMnHoU79dY/hqdefault.jpg
+        alt: { zh-CN: 鸣潮官方宣传片缩略图, en: Wuthering Waves official trailer thumbnail }
+  - id: v2-7-update
+    title: { zh-CN: 鸣潮 2.7 版本更新, en: Wuthering Waves 2.7 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-10-09' }
+        recordedAt: '2025-09-26T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 2.7 announcement
+    tags: [version]
+    media: *wuwa_media
+  - id: v2-8-update
+    title: { zh-CN: 鸣潮 2.8 版本更新, en: Wuthering Waves 2.8 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-11-20' }
+        recordedAt: '2025-11-14T00:00:00Z'
+        confidence: confirmed
+        source: Kuro Games official announcement
+    tags: [version]
+    media: *wuwa_media
+  - id: v3-0-preview
+    title: { zh-CN: 鸣潮 3.0 版本前瞻, en: Wuthering Waves 3.0 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2025-12-12' }
+        recordedAt: '2025-12-12T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.0 trailer
+    tags: [livestream]
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=1Lr41l-eJUw' }]
+    media: *wuwa_media
+  - id: v3-0-update
+    title: { zh-CN: 鸣潮 3.0 版本更新, en: Wuthering Waves 3.0 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-12-25' }
+        recordedAt: '2025-12-12T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.0 trailer
+    tags: [version]
+    media: *wuwa_media
+  - id: v3-1-preview
+    title: { zh-CN: 鸣潮 3.1 版本前瞻, en: Wuthering Waves 3.1 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-01-23' }
+        recordedAt: '2026-01-23T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.1 trailer
+    tags: [livestream]
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=6lpiSBvawB0' }]
+    media: *wuwa_media
+  - id: v3-1-update
+    title: { zh-CN: 鸣潮 3.1 版本更新, en: Wuthering Waves 3.1 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-02-05' }
+        recordedAt: '2026-01-23T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.1 announcement
+    tags: [version]
+    media: *wuwa_media
+  - id: v3-2-preview
+    title: { zh-CN: 鸣潮 3.2 版本前瞻, en: Wuthering Waves 3.2 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-03-13' }
+        recordedAt: '2026-03-13T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.2 trailer
+    tags: [livestream]
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=aMAJhkp0hlc' }]
+    media: *wuwa_media
+  - id: v3-2-update
+    title: { zh-CN: 鸣潮 3.2 版本更新, en: Wuthering Waves 3.2 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-03-19' }
+        recordedAt: '2026-03-13T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.2 announcement
+    tags: [version]
+    media: *wuwa_media
+  - id: endstate-matrix-launch
+    title: { zh-CN: 高难玩法「终局矩阵」上线, en: Endstate Matrix Launch }
+    schedule:
+      - id: launch
+        value: { kind: exact, date: '2026-03-19' }
+        recordedAt: '2026-03-13T00:00:00Z'
+        confidence: confirmed
+        source: Version 3.2 content announcement
+    tags: [endgame]
+    media: *wuwa_media
+  - id: v3-3-preview
+    title: { zh-CN: 鸣潮 3.3 版本前瞻, en: Wuthering Waves 3.3 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-04-17' }
+        recordedAt: '2026-04-17T00:00:00Z'
+        confidence: confirmed
+        source: Kuro Games preview
+    tags: [livestream, anniversary]
+    media: *wuwa_media
+  - id: v3-3-update
+    title: { zh-CN: 鸣潮 3.3 周年版本更新, en: Wuthering Waves 3.3 Anniversary Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-04-30' }
+        recordedAt: '2026-04-17T00:00:00Z'
+        confidence: confirmed
+        source: Kuro Games official announcement
+    tags: [version, anniversary]
+    media: *wuwa_media
+  - id: v3-4-preview
+    title: { zh-CN: 鸣潮 3.4 版本前瞻, en: Wuthering Waves 3.4 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-05-29' }
+        recordedAt: '2026-05-29T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.4 trailer
+    tags: [livestream, collaboration]
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=Qa7qH6OZ7ls' }]
+    media: *wuwa_media
+  - id: v3-4-update
+    title: { zh-CN: 鸣潮 3.4 ×《赛博朋克：边缘行者》联动版本更新, en: Wuthering Waves 3.4 Collaboration Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-06-08' }
+        recordedAt: '2026-05-29T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.4 trailer
+    tags: [version, collaboration]
+    media: *wuwa_media
+  - id: v3-5-preview
+    title: { zh-CN: 鸣潮 3.5 版本前瞻, en: Wuthering Waves 3.5 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-06-26' }
+        recordedAt: '2026-06-26T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.5 trailer
+    tags: [livestream]
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=RJsycDbdSgo' }]
+    media: *wuwa_media
+  - id: v3-5-update
+    title: { zh-CN: 鸣潮 3.5 版本更新, en: Wuthering Waves 3.5 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-07-10' }
+        recordedAt: '2026-06-26T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.5 announcement
+    tags: [version]
+    media: *wuwa_media
+  - id: v3-6-preview
+    title: { zh-CN: 鸣潮 3.6 版本前瞻, en: Wuthering Waves 3.6 Preview }
+    schedule:
+      - id: broadcast
+        value: { kind: datetime, dateTime: '2026-08-07T19:00:00+08:00', timezone: Asia/Shanghai }
+        recordedAt: '2026-08-07T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.6 preview
+    tags: [livestream]
+    media: *wuwa_media
+  - id: v3-6-update
+    title: { zh-CN: 鸣潮 3.6 版本更新, en: Wuthering Waves 3.6 Update }
+    schedule:
+      - id: maintenance
+        value: { kind: datetime, dateTime: '2026-08-20T04:00:00+08:00', timezone: Asia/Shanghai }
+        recordedAt: '2026-08-18T00:00:00Z'
+        confidence: confirmed
+        source: Official Version 3.6 maintenance notice
+    tags: [version]
+    media: *wuwa_media

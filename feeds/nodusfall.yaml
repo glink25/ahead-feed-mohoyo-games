@@ -105,4 +105,3 @@ events:
         confidence: confirmed
         source: Official NODUSFALL channels
     tags: [release]
-status: active

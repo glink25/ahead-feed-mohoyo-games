@@ -18,7 +18,7 @@ tags:
     label: { zh-CN: 高难玩法, en: Endgame }
 events:
   - id: v3-6-update
-    title: { zh-CN: 星穹铁道 3.6「长夜月」版本更新, en: Honkai Star Rail 3.6 Update }
+    title: { zh-CN: 星穹铁道 3.6 版本更新, en: Honkai Star Rail 3.6 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2025-09-24' }
@@ -31,7 +31,7 @@ events:
         value: https://www.hoyolab.com/article/41287981
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v3-7-update
-    title: { zh-CN: 星穹铁道 3.7「成为昨日的明日」版本更新, en: Honkai Star Rail 3.7 Update }
+    title: { zh-CN: 星穹铁道 3.7 版本更新, en: Honkai Star Rail 3.7 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2025-11-05' }
@@ -44,7 +44,7 @@ events:
         value: https://www.hoyolab.com/article/42119659
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v3-8-update
-    title: { zh-CN: 星穹铁道 3.8「记忆是梦的开场白」版本更新, en: Honkai Star Rail 3.8 Update }
+    title: { zh-CN: 星穹铁道 3.8 版本更新, en: Honkai Star Rail 3.8 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2025-12-17' }
@@ -73,7 +73,7 @@ events:
         value: https://www.hoyolab.com/article/43583727
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-0-update
-    title: { zh-CN: 星穹铁道 4.0「满月无啊哈」版本更新, en: Honkai Star Rail 4.0 Update }
+    title: { zh-CN: 星穹铁道 4.0 版本更新, en: Honkai Star Rail 4.0 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2026-02-13' }
@@ -86,7 +86,7 @@ events:
         value: https://www.hoyolab.com/article/43725556
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-1-update
-    title: { zh-CN: 星穹铁道 4.1「破晓时分，线索解开」版本更新, en: Honkai Star Rail 4.1 Update }
+    title: { zh-CN: 星穹铁道 4.1 版本更新, en: Honkai Star Rail 4.1 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2026-03-25' }
@@ -99,7 +99,7 @@ events:
         value: https://www.hoyolab.com/article/44300328
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-2-update
-    title: { zh-CN: 星穹铁道 4.2「众生大笑」版本更新, en: Honkai Star Rail 4.2 Update }
+    title: { zh-CN: 星穹铁道 4.2 版本更新, en: Honkai Star Rail 4.2 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2026-04-22' }
@@ -112,7 +112,7 @@ events:
         value: https://www.hoyolab.com/article/44721916
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-3-update
-    title: { zh-CN: 星穹铁道 4.3「生者之下的忘川」版本更新, en: Honkai Star Rail 4.3 Update }
+    title: { zh-CN: 星穹铁道 4.3 版本更新, en: Honkai Star Rail 4.3 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2026-06-01' }
@@ -141,7 +141,7 @@ events:
         value: https://www.hoyolab.com/article/45650870
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-4-update
-    title: { zh-CN: 星穹铁道 4.4「毁灭中，汽笛长鸣」版本更新, en: Honkai Star Rail 4.4 Update }
+    title: { zh-CN: 星穹铁道 4.4 版本更新, en: Honkai Star Rail 4.4 Update }
     schedule:
       - id: maintenance
         value: { kind: exact, date: '2026-07-15' }
@@ -166,7 +166,7 @@ events:
         value: https://www.hoyolab.com/article/46211816
         label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
   - id: v4-5-update
-    title: { zh-CN: 星穹铁道 4.5「将群星掷于星都」版本更新, en: Honkai Star Rail 4.5 Update }
+    title: { zh-CN: 星穹铁道 4.5 版本更新, en: Honkai Star Rail 4.5 Update }
     schedule:
       - id: release
         value: { kind: exact, date: '2026-08-26' }
@@ -222,7 +222,7 @@ events:
         source: Version 3.6 Update Details
     tags: [endgame]
   - id: as-2026-08-31
-    title: { zh-CN: 末日幻影「天狼」轮换, en: Apocalyptic Shadow Celestial Lupine }
+    title: { zh-CN: 末日幻影轮换, en: Apocalyptic Shadow Rotation }
     schedule:
       - id: start
         value: { kind: exact, date: '2026-08-31' }
@@ -235,7 +235,7 @@ events:
         value: https://www.hoyolab.com/article/46449452
         label: { zh-CN: 4.5 官方更新详情, en: Version 4.5 official update details }
   - id: pf-2026-09-14
-    title: { zh-CN: 虚构叙事「领域创生」轮换, en: Pure Fiction Domain Genesis }
+    title: { zh-CN: 虚构叙事轮换, en: Pure Fiction Rotation }
     schedule:
       - id: start
         value: { kind: exact, date: '2026-09-14' }
@@ -243,4 +243,3 @@ events:
         confidence: confirmed
         source: Version 4.5 Update Details
     tags: [endgame]
-status: active

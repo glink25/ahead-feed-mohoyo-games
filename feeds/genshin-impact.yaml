@@ -1,0 +1,173 @@
+oefVersion: '0.1'
+kind: event-feed
+oefSearch: oef-search-v1
+id: mohoyo-genshin-impact
+name:
+  zh-CN: 原神大事件日历
+  en: Genshin Impact Major Events
+description:
+  zh-CN: 原神版本更新、版本前瞻与高难常驻玩法刷新。历史覆盖最近一年，未来只记录官方确认或明确标注的不确定事项。
+  en: Genshin Impact version updates, special programs and recurring endgame resets.
+primaryLanguage: zh-CN
+tags:
+  - id: version
+    label: { zh-CN: 版本更新, en: Version Update }
+  - id: livestream
+    label: { zh-CN: 版本前瞻, en: Special Program }
+  - id: endgame
+    label: { zh-CN: 高难玩法, en: Endgame }
+events:
+  - id: luna-i-update
+    title: { zh-CN: 原神「空月之歌·呈示」Luna I 版本更新, en: Genshin Impact Luna I Update }
+    summary: { zh-CN: 挪德卡莱篇章首个版本。, en: First Luna-series update. }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-09-10' }
+        recordedAt: '2025-09-10T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse / Genshin Impact official release
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://genshin.hoyoverse.com/
+        label: { zh-CN: 原神官网, en: Official site }
+  - id: luna-ii-update
+    title: { zh-CN: 原神 Luna II 版本更新, en: Genshin Impact Luna II Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-10-22' }
+        recordedAt: '2025-10-22T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-iii-update
+    title: { zh-CN: 原神 Luna III 版本更新, en: Genshin Impact Luna III Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-12-03' }
+        recordedAt: '2025-12-03T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-iv-update
+    title: { zh-CN: 原神 Luna IV 版本更新, en: Genshin Impact Luna IV Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-01-14' }
+        recordedAt: '2026-01-14T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-v-update
+    title: { zh-CN: 原神 Luna V 版本更新, en: Genshin Impact Luna V Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-02-25' }
+        recordedAt: '2026-02-25T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-vi-update
+    title: { zh-CN: 原神 Luna VI 版本更新, en: Genshin Impact Luna VI Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-04-08' }
+        recordedAt: '2026-04-08T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-vii-update
+    title: { zh-CN: 原神 Luna VII 版本更新, en: Genshin Impact Luna VII Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-05-20' }
+        recordedAt: '2026-05-20T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official release
+    tags: [version]
+  - id: luna-viii-special-program
+    title: { zh-CN: 原神 Luna VIII 版本前瞻特别节目, en: Genshin Impact Luna VIII Special Program }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-06-18' }
+        recordedAt: '2026-06-18T00:00:00Z'
+        confidence: confirmed
+        source: Genshin Impact official YouTube / HoYoLAB
+    tags: [livestream]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/45508755
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: luna-viii-update
+    title: { zh-CN: 原神 Luna VIII「阳夏！恶龙？童话国！」版本更新, en: Genshin Impact Luna VIII Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-07-01' }
+        recordedAt: '2026-06-18T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse official update notice
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/45508755
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: version-7-0-special-program
+    title: { zh-CN: 原神 7.0 版本前瞻特别节目, en: Genshin Impact Version 7.0 Special Program }
+    schedule:
+      - id: broadcast
+        value:
+          kind: datetime
+          dateTime: '2026-07-31T20:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-07-31T00:00:00Z'
+        confidence: confirmed
+        source: Genshin Impact official channels
+    tags: [livestream]
+  - id: version-7-0-update
+    title: { zh-CN: 原神 7.0「凛冬无慈」版本更新, en: Genshin Impact Version 7.0 Update }
+    summary: { zh-CN: 至冬区域正式开放。, en: Snezhnaya opens. }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2026-08-12T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-08-10T00:00:00Z'
+        confidence: confirmed
+        source: Version 7.0 Update Maintenance Preview
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://genshin.hoyoverse.com/
+        label: { zh-CN: 原神官网, en: Official site }
+  - id: spiral-abyss-monthly-reset
+    title: { zh-CN: 深境螺旋月度刷新, en: Spiral Abyss Monthly Reset }
+    summary: { zh-CN: 以每月 16 日为关注节点；如官方调整规则，以游戏内与公告为准。, en: Monthly endgame reset around the 16th. }
+    schedule:
+      - id: cycle-start
+        value: { kind: exact, date: '2025-09-16' }
+        recordedAt: '2025-09-06T00:00:00Z'
+        confidence: confirmed
+        source: Genshin endgame schedule
+    recurrence:
+      freq: monthly
+      interval: 1
+      byMonthDay: [16]
+      timezone: Asia/Shanghai
+    tags: [endgame]
+  - id: imaginarium-theater-monthly-reset
+    title: { zh-CN: 幻想真境剧诗月度刷新, en: Imaginarium Theater Monthly Reset }
+    summary: { zh-CN: 每月 1 日刷新，适合作为角色与阵容准备节点。, en: Monthly reset on the first day. }
+    schedule:
+      - id: cycle-start
+        value: { kind: exact, date: '2025-10-01' }
+        recordedAt: '2025-09-06T00:00:00Z'
+        confidence: confirmed
+        source: Genshin endgame schedule
+    recurrence:
+      freq: monthly
+      interval: 1
+      byMonthDay: [1]
+      timezone: Asia/Shanghai
+    tags: [endgame]
+status: active

@@ -28,15 +28,12 @@ events:
         source: HoYoverse / Genshin Impact official release
     tags: [version]
     evidence:
-      - kind: url
-        value: https://genshin.hoyoverse.com/
-      - kind: url
-        value: https://www.youtube.com/watch?v=xdKay6bhIMg
-        label: { zh-CN: 原神官方 YouTube 图片来源, en: Official Genshin Impact YouTube image source }
-    media: &genshin_media
+      - { kind: url, value: 'https://genshin.hoyoverse.com/' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=7ggMwb5tXJQ' }
+    media:
       - kind: image
-        path: https://i.ytimg.com/vi/xdKay6bhIMg/hqdefault.jpg
-        alt: { zh-CN: 原神官方宣传片缩略图, en: Genshin Impact official trailer thumbnail }
+        path: https://i.ytimg.com/vi/7ggMwb5tXJQ/maxresdefault.jpg
+        alt: { zh-CN: 原神「月之一」官方版本 PV 主视觉, en: Genshin Luna I official version key visual }
   - id: luna-ii-update
     title: { zh-CN: 原神 Luna II 版本更新, en: Genshin Impact Luna II Update }
     schedule:
@@ -46,7 +43,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=w50jW_iEXns' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/w50jW_iEXns/maxresdefault.jpg', alt: { zh-CN: 原神「月之二」官方版本 PV 主视觉, en: Genshin Luna II official version key visual } }
   - id: luna-iii-update
     title: { zh-CN: 原神 Luna III 版本更新, en: Genshin Impact Luna III Update }
     schedule:
@@ -56,7 +55,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=fU6nElrxNRs' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/fU6nElrxNRs/maxresdefault.jpg', alt: { zh-CN: 原神「月之三」官方版本 PV 主视觉, en: Genshin Luna III official version key visual } }
   - id: luna-iv-update
     title: { zh-CN: 原神 Luna IV 版本更新, en: Genshin Impact Luna IV Update }
     schedule:
@@ -66,7 +67,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=_yuHIzPJGHA' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/_yuHIzPJGHA/maxresdefault.jpg', alt: { zh-CN: 原神「月之四」官方版本 PV 主视觉, en: Genshin Luna IV official version key visual } }
   - id: luna-v-update
     title: { zh-CN: 原神 Luna V 版本更新, en: Genshin Impact Luna V Update }
     schedule:
@@ -76,7 +79,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=KPIVs48syWU' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/KPIVs48syWU/maxresdefault.jpg', alt: { zh-CN: 原神「月之五」官方前瞻主视觉, en: Genshin Luna V official special program visual } }
   - id: luna-vi-update
     title: { zh-CN: 原神 Luna VI 版本更新, en: Genshin Impact Luna VI Update }
     schedule:
@@ -86,7 +91,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=mVWLSzkpGzA' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/mVWLSzkpGzA/maxresdefault.jpg', alt: { zh-CN: 原神「月之六」官方版本 PV 主视觉, en: Genshin Luna VI official version key visual } }
   - id: luna-vii-update
     title: { zh-CN: 原神 Luna VII 版本更新, en: Genshin Impact Luna VII Update }
     schedule:
@@ -96,7 +103,9 @@ events:
         confidence: confirmed
         source: HoYoverse official release
     tags: [version]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=Tq9rQtiHg5U' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/Tq9rQtiHg5U/maxresdefault.jpg', alt: { zh-CN: 原神「月之七」官方版本 PV 主视觉, en: Genshin Luna VII official version key visual } }
   - id: luna-viii-special-program
     title: { zh-CN: 原神 Luna VIII 版本前瞻特别节目, en: Genshin Impact Luna VIII Special Program }
     schedule:
@@ -107,9 +116,10 @@ events:
         source: Genshin Impact official YouTube / HoYoLAB
     tags: [livestream]
     evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/45508755
-    media: *genshin_media
+      - { kind: url, value: 'https://www.hoyolab.com/article/45508755' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=ou_LXniASyY' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/ou_LXniASyY/maxresdefault.jpg', alt: { zh-CN: 原神「月之八」官方版本 PV 主视觉, en: Genshin Luna VIII official version key visual } }
   - id: luna-viii-update
     title: { zh-CN: 原神 Luna VIII「阳夏！恶龙？童话国！」版本更新, en: Genshin Impact Luna VIII Update }
     schedule:
@@ -120,9 +130,10 @@ events:
         source: HoYoverse official update notice
     tags: [version]
     evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/45508755
-    media: *genshin_media
+      - { kind: url, value: 'https://www.hoyolab.com/article/45508755' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=ou_LXniASyY' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/ou_LXniASyY/maxresdefault.jpg', alt: { zh-CN: 原神「月之八」官方版本 PV 主视觉, en: Genshin Luna VIII official version key visual } }
   - id: version-7-0-special-program
     title: { zh-CN: 原神 7.0 版本前瞻特别节目, en: Genshin Impact Version 7.0 Special Program }
     schedule:
@@ -132,7 +143,9 @@ events:
         confidence: confirmed
         source: Genshin Impact official channels
     tags: [livestream]
-    media: *genshin_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=G9KmSRuNZIY' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/G9KmSRuNZIY/maxresdefault.jpg', alt: { zh-CN: 原神 7.0「凛冬无慈」官方版本主视觉, en: Genshin 7.0 official version key visual } }
   - id: version-7-0-update
     title: { zh-CN: 原神 7.0「凛冬无慈」版本更新, en: Genshin Impact Version 7.0 Update }
     summary: { zh-CN: 至冬区域正式开放。, en: Snezhnaya opens. }
@@ -144,9 +157,10 @@ events:
         source: Version 7.0 Update Maintenance Preview
     tags: [version]
     evidence:
-      - kind: url
-        value: https://genshin.hoyoverse.com/
-    media: *genshin_media
+      - { kind: url, value: 'https://genshin.hoyoverse.com/' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=G9KmSRuNZIY' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/G9KmSRuNZIY/maxresdefault.jpg', alt: { zh-CN: 原神 7.0「凛冬无慈」官方版本主视觉, en: Genshin 7.0 official version key visual } }
   - id: spiral-abyss-monthly-reset
     title: { zh-CN: 深境螺旋月度刷新, en: Spiral Abyss Monthly Reset }
     summary: { zh-CN: 以每月 16 日为关注节点；如官方调整规则，以游戏内与公告为准。, en: Monthly endgame reset around the 16th. }
@@ -162,7 +176,8 @@ events:
       byMonthDay: [16]
       timezone: Asia/Shanghai
     tags: [endgame]
-    media: *genshin_media
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/7ggMwb5tXJQ/maxresdefault.jpg', alt: { zh-CN: 原神当前篇章官方主视觉（深境螺旋轮换配图）, en: Current Genshin chapter key visual for Spiral Abyss rotation } }
   - id: imaginarium-theater-monthly-reset
     title: { zh-CN: 幻想真境剧诗月度刷新, en: Imaginarium Theater Monthly Reset }
     summary: { zh-CN: 每月 1 日刷新，适合作为角色与阵容准备节点。, en: Monthly reset on the first day. }
@@ -178,4 +193,5 @@ events:
       byMonthDay: [1]
       timezone: Asia/Shanghai
     tags: [endgame]
-    media: *genshin_media
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/w50jW_iEXns/maxresdefault.jpg', alt: { zh-CN: 原神当前篇章官方主视觉（幻想真境剧诗轮换配图）, en: Current Genshin chapter key visual for Imaginarium Theater rotation } }

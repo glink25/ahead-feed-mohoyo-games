@@ -1,0 +1,178 @@
+oefVersion: '0.1'
+kind: event-feed
+oefSearch: oef-search-v1
+id: yostar-arknights
+name:
+  zh-CN: 明日方舟大事件日历
+  en: Arknights Major Events
+description:
+  zh-CN: 明日方舟主线、大型活动、周年、联动与高难玩法关键节点。以全球服官方时间为主。
+  en: Arknights main story, major events, anniversaries, collaborations and endgame milestones.
+primaryLanguage: zh-CN
+tags:
+  - id: story
+    label: { zh-CN: 大型活动, en: Story Event }
+  - id: main-story
+    label: { zh-CN: 主线, en: Main Story }
+  - id: anniversary
+    label: { zh-CN: 周年, en: Anniversary }
+  - id: collaboration
+    label: { zh-CN: 联动, en: Collaboration }
+  - id: endgame
+    label: { zh-CN: 高难玩法, en: Endgame }
+  - id: rerun
+    label: { zh-CN: 复刻, en: Rerun }
+events:
+  - id: masses-travels
+    title:
+      zh-CN: Side Story「The Masses' Travels」开启
+      en: The Masses' Travels Side Story
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2025-10-14T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2025-10-14T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official event notice
+    tags: [story]
+    evidence:
+      - kind: url
+        value: https://www.arknights.global/
+      - kind: url
+        value: https://www.youtube.com/watch?v=FfcCvZulM8Q
+        label: { zh-CN: 明日方舟官方 YouTube 图片来源, en: Official Arknights YouTube image source }
+    media: &arknights_media
+      - kind: image
+        path: https://i.ytimg.com/vi/FfcCvZulM8Q/hqdefault.jpg
+        alt: { zh-CN: 明日方舟官方宣传片缩略图, en: Arknights official trailer thumbnail }
+  - id: act-or-die
+    title: { zh-CN: Side Story「Act or Die」开启, en: Act or Die Side Story }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2025-11-13T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2025-11-13T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official event notice
+    tags: [story]
+    media: *arknights_media
+  - id: ato-sixth-anniversary
+    title: { zh-CN: 「Ato」六周年庆典开启, en: Ato 6th Anniversary Celebration }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-01-16T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-01-16T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official anniversary notice
+    tags: [anniversary, story]
+    media: *arknights_media
+  - id: ave-mujica-collab
+    title: { zh-CN: 明日方舟 × BanG Dream! Ave Mujica 联动开启, en: Arknights x BanG Dream! Ave Mujica Collaboration }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-02-10T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-02-10T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official collaboration notice
+    tags: [collaboration, story]
+    media: *arknights_media
+  - id: episode-16
+    title: { zh-CN: 主线 Episode 16 开启, en: Arknights Episode 16 Opens }
+    schedule:
+      - id: start
+        value: { kind: exact, date: '2026-03-19' }
+        recordedAt: '2026-03-19T00:00:00Z'
+        confidence: confirmed
+        source: Global release schedule
+    tags: [main-story]
+    media: *arknights_media
+  - id: retracing-our-steps
+    title: { zh-CN: 2026 感谢庆典「Retracing Our Steps」开启, en: Retracing Our Steps 2026 Thank-You Celebration }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-04-14T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-04-14T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official celebration notice
+    tags: [story]
+    media: *arknights_media
+  - id: stronghold-protocol-alliance
+    title:
+      zh-CN: 高难玩法「Stronghold Protocol：Alliance」开启
+      en: Stronghold Protocol Alliance Opens
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-04-28T09:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-04-28T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official notice
+    tags: [endgame]
+    media: *arknights_media
+  - id: medjehtiqedti-bound
+    title: { zh-CN: Side Story「Medjehtiqedti Bound」开启, en: Medjehtiqedti Bound Side Story }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-06-22T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-06-22T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official event notice
+    tags: [story]
+    media: *arknights_media
+  - id: vector-breakthrough-2
+    title:
+      zh-CN: 「Vector Breakthrough #2」开启
+      en: Vector Breakthrough #2 Trial from Misery
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-07-30T08:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-07-30T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official notice
+    tags: [endgame]
+    media: *arknights_media
+  - id: stronghold-protocol-alliance-part-2
+    title:
+      zh-CN: 「Stronghold Protocol：Alliance」第二期开启
+      en: Stronghold Protocol Alliance Part 2
+    schedule:
+      - id: start
+        value: { kind: exact, date: '2026-08-20' }
+        recordedAt: '2026-08-18T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global event notice
+    tags: [endgame]
+    media: *arknights_media
+  - id: when-elegies-are-ashes-rerun
+    title: { zh-CN: 「When Elegies Are Ashes」复刻开启, en: When Elegies Are Ashes Rerun }
+    schedule:
+      - id: start
+        value: { kind: datetime, dateTime: '2026-08-27T04:00:00-07:00', timezone: America/Los_Angeles }
+        recordedAt: '2026-08-27T00:00:00Z'
+        confidence: confirmed
+        source: Arknights Global official announcement
+    tags: [rerun, story]
+    media: *arknights_media
+  - id: people-a-people
+    title: { zh-CN: 「People, A People」全球服预计开启, en: People A People Expected Global Release }
+    summary:
+      zh-CN: 全球服日期尚未正式官宣，当前日期为排期推定，需等待 Yostar 最终公告。
+      en: Global date is not officially announced and should be replaced by Yostar's final notice.
+    schedule:
+      - id: expected
+        value: { kind: exact, date: '2026-09-16' }
+        recordedAt: '2026-09-06T00:00:00Z'
+        confidence: likely
+        source: Published server schedule comparison; awaiting Global official notice
+    tags: [story]
+    media: *arknights_media
+  - id: critical-phase-transition
+    title: { zh-CN: 主线「Critical Phase Transition」全球服预计开启, en: Critical Phase Transition Expected Global Release }
+    summary:
+      zh-CN: 全球服尚未官宣，作为未来关注节点保留，日期需以官方公告为准。
+      en: Global date is not officially announced; retained only as a watchpoint.
+    schedule:
+      - id: expected
+        value: { kind: exact, date: '2026-10-14' }
+        recordedAt: '2026-09-06T00:00:00Z'
+        confidence: likely
+        source: Published server schedule comparison; awaiting Global official notice
+    tags: [main-story]
+    media: *arknights_media

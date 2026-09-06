@@ -30,16 +30,9 @@ events:
         confidence: confirmed
         source: Official Wuthering Waves trailer
     tags: [livestream]
-    evidence:
-      - kind: url
-        value: https://www.youtube.com/watch?v=cuht8zMs93E
-      - kind: url
-        value: https://www.youtube.com/watch?v=ojMnHoU79dY
-        label: { zh-CN: 鸣潮官方 YouTube 图片来源, en: Official Wuthering Waves YouTube image source }
-    media: &wuwa_media
-      - kind: image
-        path: https://i.ytimg.com/vi/ojMnHoU79dY/hqdefault.jpg
-        alt: { zh-CN: 鸣潮官方宣传片缩略图, en: Wuthering Waves official trailer thumbnail }
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=cuht8zMs93E' }]
+    media:
+      - &wuwa_27 { kind: image, path: 'https://i.ytimg.com/vi/cuht8zMs93E/maxresdefault.jpg', alt: { zh-CN: 鸣潮 2.7 官方版本 PV 主视觉, en: Wuthering Waves 2.7 official version key visual } }
   - id: v2-7-update
     title: { zh-CN: 鸣潮 2.7 版本更新, en: Wuthering Waves 2.7 Update }
     schedule:
@@ -49,7 +42,7 @@ events:
         confidence: confirmed
         source: Official Version 2.7 announcement
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_27]
   - id: v2-8-update
     title: { zh-CN: 鸣潮 2.8 版本更新, en: Wuthering Waves 2.8 Update }
     schedule:
@@ -59,7 +52,9 @@ events:
         confidence: confirmed
         source: Kuro Games official announcement
     tags: [version]
-    media: *wuwa_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=MtbA32Wdviw' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/MtbA32Wdviw/maxresdefault.jpg', alt: { zh-CN: 鸣潮 2.8 官方版本 PV 主视觉, en: Wuthering Waves 2.8 official version key visual } }
   - id: v3-0-preview
     title: { zh-CN: 鸣潮 3.0 版本前瞻, en: Wuthering Waves 3.0 Preview }
     schedule:
@@ -70,7 +65,8 @@ events:
         source: Official Version 3.0 trailer
     tags: [livestream]
     evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=1Lr41l-eJUw' }]
-    media: *wuwa_media
+    media:
+      - &wuwa_30 { kind: image, path: 'https://i.ytimg.com/vi/1Lr41l-eJUw/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.0 官方版本 PV 主视觉, en: Wuthering Waves 3.0 official version key visual } }
   - id: v3-0-update
     title: { zh-CN: 鸣潮 3.0 版本更新, en: Wuthering Waves 3.0 Update }
     schedule:
@@ -80,7 +76,7 @@ events:
         confidence: confirmed
         source: Official Version 3.0 trailer
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_30]
   - id: v3-1-preview
     title: { zh-CN: 鸣潮 3.1 版本前瞻, en: Wuthering Waves 3.1 Preview }
     schedule:
@@ -91,7 +87,8 @@ events:
         source: Official Version 3.1 trailer
     tags: [livestream]
     evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=6lpiSBvawB0' }]
-    media: *wuwa_media
+    media:
+      - &wuwa_31 { kind: image, path: 'https://i.ytimg.com/vi/6lpiSBvawB0/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.1 官方版本 PV 主视觉, en: Wuthering Waves 3.1 official version key visual } }
   - id: v3-1-update
     title: { zh-CN: 鸣潮 3.1 版本更新, en: Wuthering Waves 3.1 Update }
     schedule:
@@ -101,7 +98,7 @@ events:
         confidence: confirmed
         source: Official Version 3.1 announcement
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_31]
   - id: v3-2-preview
     title: { zh-CN: 鸣潮 3.2 版本前瞻, en: Wuthering Waves 3.2 Preview }
     schedule:
@@ -112,7 +109,8 @@ events:
         source: Official Version 3.2 trailer
     tags: [livestream]
     evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=aMAJhkp0hlc' }]
-    media: *wuwa_media
+    media:
+      - &wuwa_32 { kind: image, path: 'https://i.ytimg.com/vi/aMAJhkp0hlc/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.2 官方版本 PV 主视觉, en: Wuthering Waves 3.2 official version key visual } }
   - id: v3-2-update
     title: { zh-CN: 鸣潮 3.2 版本更新, en: Wuthering Waves 3.2 Update }
     schedule:
@@ -122,7 +120,7 @@ events:
         confidence: confirmed
         source: Official Version 3.2 announcement
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_32]
   - id: endstate-matrix-launch
     title: { zh-CN: 高难玩法「终局矩阵」上线, en: Endstate Matrix Launch }
     schedule:
@@ -132,7 +130,7 @@ events:
         confidence: confirmed
         source: Version 3.2 content announcement
     tags: [endgame]
-    media: *wuwa_media
+    media: [*wuwa_32]
   - id: v3-3-preview
     title: { zh-CN: 鸣潮 3.3 版本前瞻, en: Wuthering Waves 3.3 Preview }
     schedule:
@@ -142,7 +140,9 @@ events:
         confidence: confirmed
         source: Kuro Games preview
     tags: [livestream, anniversary]
-    media: *wuwa_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=60JiozUVswk' }]
+    media:
+      - &wuwa_33 { kind: image, path: 'https://i.ytimg.com/vi/60JiozUVswk/maxresdefault.jpg', alt: { zh-CN: 鸣潮 2 周年暨 3.3 官方版本主视觉, en: Wuthering Waves 2nd Anniversary and 3.3 key visual } }
   - id: v3-3-update
     title: { zh-CN: 鸣潮 3.3 周年版本更新, en: Wuthering Waves 3.3 Anniversary Update }
     schedule:
@@ -152,7 +152,7 @@ events:
         confidence: confirmed
         source: Kuro Games official announcement
     tags: [version, anniversary]
-    media: *wuwa_media
+    media: [*wuwa_33]
   - id: v3-4-preview
     title: { zh-CN: 鸣潮 3.4 版本前瞻, en: Wuthering Waves 3.4 Preview }
     schedule:
@@ -163,7 +163,8 @@ events:
         source: Official Version 3.4 trailer
     tags: [livestream, collaboration]
     evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=Qa7qH6OZ7ls' }]
-    media: *wuwa_media
+    media:
+      - &wuwa_34 { kind: image, path: 'https://i.ytimg.com/vi/Qa7qH6OZ7ls/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.4 联动版本官方主视觉, en: Wuthering Waves 3.4 collaboration key visual } }
   - id: v3-4-update
     title: { zh-CN: 鸣潮 3.4 ×《赛博朋克：边缘行者》联动版本更新, en: Wuthering Waves 3.4 Collaboration Update }
     schedule:
@@ -173,7 +174,7 @@ events:
         confidence: confirmed
         source: Official Version 3.4 trailer
     tags: [version, collaboration]
-    media: *wuwa_media
+    media: [*wuwa_34]
   - id: v3-5-preview
     title: { zh-CN: 鸣潮 3.5 版本前瞻, en: Wuthering Waves 3.5 Preview }
     schedule:
@@ -184,7 +185,8 @@ events:
         source: Official Version 3.5 trailer
     tags: [livestream]
     evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=RJsycDbdSgo' }]
-    media: *wuwa_media
+    media:
+      - &wuwa_35 { kind: image, path: 'https://i.ytimg.com/vi/RJsycDbdSgo/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.5 官方版本主视觉, en: Wuthering Waves 3.5 official version key visual } }
   - id: v3-5-update
     title: { zh-CN: 鸣潮 3.5 版本更新, en: Wuthering Waves 3.5 Update }
     schedule:
@@ -194,7 +196,7 @@ events:
         confidence: confirmed
         source: Official Version 3.5 announcement
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_35]
   - id: v3-6-preview
     title: { zh-CN: 鸣潮 3.6 版本前瞻, en: Wuthering Waves 3.6 Preview }
     schedule:
@@ -204,7 +206,9 @@ events:
         confidence: confirmed
         source: Official Version 3.6 preview
     tags: [livestream]
-    media: *wuwa_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=URrFKyAoPw4' }]
+    media:
+      - &wuwa_36 { kind: image, path: 'https://i.ytimg.com/vi/URrFKyAoPw4/maxresdefault.jpg', alt: { zh-CN: 鸣潮 3.6 官方前瞻主视觉, en: Wuthering Waves 3.6 official preview visual } }
   - id: v3-6-update
     title: { zh-CN: 鸣潮 3.6 版本更新, en: Wuthering Waves 3.6 Update }
     schedule:
@@ -214,4 +218,4 @@ events:
         confidence: confirmed
         source: Official Version 3.6 maintenance notice
     tags: [version]
-    media: *wuwa_media
+    media: [*wuwa_36]

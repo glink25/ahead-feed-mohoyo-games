@@ -27,15 +27,10 @@ events:
         source: Version 3.6 Update and Maintenance Notice
     tags: [version]
     evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/41287981
-      - kind: url
-        value: https://www.youtube.com/watch?v=jCxq-jMMsAc
-        label: { zh-CN: 星穹铁道官方 YouTube 图片来源, en: Official Honkai Star Rail YouTube image source }
-    media: &hsr_media
-      - kind: image
-        path: https://i.ytimg.com/vi/jCxq-jMMsAc/hqdefault.jpg
-        alt: { zh-CN: 星穹铁道官方宣传片缩略图, en: Honkai Star Rail official trailer thumbnail }
+      - { kind: url, value: 'https://www.hoyolab.com/article/41287981' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=_2B_woXdf_E' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/_2B_woXdf_E/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.6 官方版本 PV 主视觉, en: Honkai Star Rail 3.6 official version key visual } }
   - id: v3-7-update
     title: { zh-CN: 星穹铁道 3.7 版本更新, en: Honkai Star Rail 3.7 Update }
     schedule:
@@ -45,8 +40,11 @@ events:
         confidence: confirmed
         source: Version 3.7 Update and Maintenance Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/42119659' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/42119659' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=r4gljUbCzqA' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/r4gljUbCzqA/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.7 官方版本 PV 主视觉, en: Honkai Star Rail 3.7 official version key visual } }
   - id: v3-8-update
     title: { zh-CN: 星穹铁道 3.8 版本更新, en: Honkai Star Rail 3.8 Update }
     schedule:
@@ -56,8 +54,11 @@ events:
         confidence: confirmed
         source: Version 3.8 Update and Maintenance Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/42779619' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/42779619' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=dUZl4ssk5Pw' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/dUZl4ssk5Pw/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.8 官方版本 PV 主视觉, en: Honkai Star Rail 3.8 official version key visual } }
   - id: v4-0-special-program
     title: { zh-CN: 星穹铁道 4.0 版本前瞻特别节目, en: Honkai Star Rail 4.0 Special Program }
     schedule:
@@ -67,8 +68,11 @@ events:
         confidence: confirmed
         source: Official special program notice
     tags: [livestream]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/43583727' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/43583727' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=2hH0hILcWPs' }
+    media:
+      - &hsr_40 { kind: image, path: 'https://i.ytimg.com/vi/2hH0hILcWPs/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.0 官方版本 PV 主视觉, en: Honkai Star Rail 4.0 official version key visual } }
   - id: v4-0-update
     title: { zh-CN: 星穹铁道 4.0 版本更新, en: Honkai Star Rail 4.0 Update }
     schedule:
@@ -79,7 +83,7 @@ events:
         source: Version 4.0 Update and Maintenance Notice
     tags: [version]
     evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/43725556' }]
-    media: *hsr_media
+    media: [*hsr_40]
   - id: v4-1-update
     title: { zh-CN: 星穹铁道 4.1 版本更新, en: Honkai Star Rail 4.1 Update }
     schedule:
@@ -89,8 +93,11 @@ events:
         confidence: confirmed
         source: Version 4.1 Update and Maintenance Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44300328' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/44300328' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=HqQqHgt4frU' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/HqQqHgt4frU/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.1 官方版本 PV 主视觉, en: Honkai Star Rail 4.1 official version key visual } }
   - id: v4-2-update
     title: { zh-CN: 星穹铁道 4.2 版本更新, en: Honkai Star Rail 4.2 Update }
     schedule:
@@ -100,8 +107,11 @@ events:
         confidence: confirmed
         source: Version 4.2 Update and Maintenance Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44721916' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/44721916' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=NyM_seY0XKg' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/NyM_seY0XKg/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.2 官方版本 PV 主视觉, en: Honkai Star Rail 4.2 official version key visual } }
   - id: v4-3-update
     title: { zh-CN: 星穹铁道 4.3 版本更新, en: Honkai Star Rail 4.3 Update }
     schedule:
@@ -111,8 +121,11 @@ events:
         confidence: confirmed
         source: Version 4.3 Update and Maintenance Notice
     tags: [version]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/45252090' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/45252090' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=lW5ndcGuw2c' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/lW5ndcGuw2c/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.3 官方版本 PV 主视觉, en: Honkai Star Rail 4.3 official version key visual } }
   - id: v4-4-special-program
     title: { zh-CN: 星穹铁道 4.4 版本前瞻特别节目, en: Honkai Star Rail 4.4 Special Program }
     schedule:
@@ -122,8 +135,11 @@ events:
         confidence: confirmed
         source: Official special program notice
     tags: [livestream]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/45650870' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/45650870' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=xT88aPknvag' }
+    media:
+      - &hsr_44 { kind: image, path: 'https://i.ytimg.com/vi/xT88aPknvag/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.4 官方版本 PV 主视觉, en: Honkai Star Rail 4.4 official version key visual } }
   - id: v4-4-update
     title: { zh-CN: 星穹铁道 4.4 版本更新, en: Honkai Star Rail 4.4 Update }
     schedule:
@@ -133,7 +149,7 @@ events:
         confidence: confirmed
         source: Version 4.4 Update and Maintenance Notice
     tags: [version]
-    media: *hsr_media
+    media: [*hsr_44]
   - id: v4-5-special-program
     title: { zh-CN: 星穹铁道 4.5 版本前瞻特别节目, en: Honkai Star Rail 4.5 Special Program }
     schedule:
@@ -143,8 +159,11 @@ events:
         confidence: confirmed
         source: Official special program notice
     tags: [livestream]
-    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/46211816' }]
-    media: *hsr_media
+    evidence:
+      - { kind: url, value: 'https://www.hoyolab.com/article/46211816' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=hTIdycp-c9Y' }
+    media:
+      - &hsr_45 { kind: image, path: 'https://i.ytimg.com/vi/hTIdycp-c9Y/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 4.5 官方版本 PV 主视觉, en: Honkai Star Rail 4.5 official version key visual } }
   - id: v4-5-update
     title: { zh-CN: 星穹铁道 4.5 版本更新, en: Honkai Star Rail 4.5 Update }
     schedule:
@@ -155,18 +174,20 @@ events:
         source: Version 4.5 Update Details
     tags: [version]
     evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/46449452' }]
-    media: *hsr_media
+    media: [*hsr_45]
   - id: v4-6-update
     title: { zh-CN: 星穹铁道 4.6 版本更新, en: Honkai Star Rail 4.6 Update }
     summary: { zh-CN: 截至 2026-09-06 尚未公布更新日期。, en: Release date not announced as of 2026-09-06. }
     schedule:
       - id: awaiting-announcement
-        value: { kind: unknown, note: { zh-CN: 等待官方版本前瞻或维护公告。, en: Awaiting an official announcement. } }
+        value:
+          kind: unknown
+          note: { zh-CN: 等待官方版本前瞻或维护公告。, en: Awaiting an official announcement. }
         recordedAt: '2026-09-06T01:44:00Z'
         confidence: confirmed
         source: Version 4.5 notes reference post-4.6 endgame content
     tags: [version]
-    media: *hsr_media
+    media: [*hsr_45]
   - id: as-2025-09-29
     title: { zh-CN: 末日幻影轮换, en: Apocalyptic Shadow Rotation }
     schedule:
@@ -176,7 +197,8 @@ events:
         confidence: confirmed
         source: Version 3.6 Update Details
     tags: [endgame]
-    media: *hsr_media
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/_2B_woXdf_E/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.6 版本主视觉（末日幻影轮换配图）, en: Version 3.6 key visual for Apocalyptic Shadow rotation } }
   - id: pf-2025-10-13
     title: { zh-CN: 虚构叙事轮换, en: Pure Fiction Rotation }
     schedule:
@@ -186,7 +208,8 @@ events:
         confidence: confirmed
         source: Version 3.6 Update Details
     tags: [endgame]
-    media: *hsr_media
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/_2B_woXdf_E/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.6 版本主视觉（虚构叙事轮换配图）, en: Version 3.6 key visual for Pure Fiction rotation } }
   - id: moc-2025-10-27
     title: { zh-CN: 混沌回忆轮换, en: Memory of Chaos Rotation }
     schedule:
@@ -196,7 +219,8 @@ events:
         confidence: confirmed
         source: Version 3.6 Update Details
     tags: [endgame]
-    media: *hsr_media
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/r4gljUbCzqA/maxresdefault.jpg', alt: { zh-CN: 星穹铁道 3.7 版本主视觉（混沌回忆轮换配图）, en: Version 3.7 key visual for Memory of Chaos rotation } }
   - id: as-2026-08-31
     title: { zh-CN: 末日幻影轮换, en: Apocalyptic Shadow Rotation }
     schedule:
@@ -206,7 +230,7 @@ events:
         confidence: confirmed
         source: Version 4.5 Update Details
     tags: [endgame]
-    media: *hsr_media
+    media: [*hsr_45]
   - id: pf-2026-09-14
     title: { zh-CN: 虚构叙事轮换, en: Pure Fiction Rotation }
     schedule:
@@ -216,4 +240,4 @@ events:
         confidence: confirmed
         source: Version 4.5 Update Details
     tags: [endgame]
-    media: *hsr_media
+    media: [*hsr_45]

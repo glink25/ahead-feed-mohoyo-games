@@ -95,7 +95,9 @@ events:
       - id: awaiting-date
         value:
           kind: unknown
-          note: { zh-CN: 测试时间待官方公布；已预约的玩家应关注官网、官方社媒及邮件。, en: Test date TBA; follow official site, social channels and email. }
+          note:
+            zh-CN: 测试时间待官方公布；已预约的玩家应关注官网、官方社媒及邮件。
+            en: 'Test date TBA; follow official site, social channels and email.'
         recordedAt: '2026-09-06T01:44:00Z'
         confidence: confirmed
         source: Official site contains registration/test-access messaging without a dated public test window
@@ -104,10 +106,16 @@ events:
     media: *nodusfall_media
   - id: launch
     title: { zh-CN: 《源初之结》正式上线, en: NODUSFALL Launch }
-    summary: { zh-CN: 截至 2026-09-06 未官宣上线日期；网络流传的年份预测不写入确定档期。, en: No official launch date as of 2026-09-06. }
+    summary:
+      zh-CN: 截至 2026-09-06 未官宣上线日期；网络流传的年份预测不写入确定档期。
+      en: No official launch date as of 2026-09-06.
     schedule:
       - id: awaiting-date
-        value: { kind: unknown, note: { zh-CN: 正式上线时间待官方公布。, en: Release date to be announced. } }
+        value:
+          kind: unknown
+          note:
+            zh-CN: 正式上线时间待官方公布。
+            en: Release date to be announced.
         recordedAt: '2026-09-06T01:44:00Z'
         confidence: confirmed
         source: Official NODUSFALL channels

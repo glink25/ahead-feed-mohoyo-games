@@ -1,0 +1,167 @@
+oefVersion: '0.1'
+kind: event-feed
+oefSearch: oef-search-v1
+id: mohoyo-zenless-zone-zero
+name:
+  zh-CN: 绝区零大事件日历
+  en: Zenless Zone Zero Major Events
+description:
+  zh-CN: 绝区零版本更新、版本前瞻和危局强袭战等高难玩法节点。
+  en: Zenless Zone Zero version updates, special programs and endgame milestones.
+primaryLanguage: zh-CN
+tags:
+  - id: version
+    label: { zh-CN: 版本更新, en: Version Update }
+  - id: livestream
+    label: { zh-CN: 版本前瞻, en: Special Program }
+  - id: endgame
+    label: { zh-CN: 高难玩法, en: Endgame }
+events:
+  - id: v2-3-update
+    title: { zh-CN: 绝区零 2.3「可曾记得梦」版本更新, en: Zenless Zone Zero 2.3 Update }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2025-10-15T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2025-10-13T00:00:00Z'
+        confidence: confirmed
+        source: Version 2.3 Pre-Download & Update Notice
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/41722094
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: v2-4-update
+    title: { zh-CN: 绝区零 2.4「将临未抵的深渊」版本更新, en: Zenless Zone Zero 2.4 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-11-26' }
+        recordedAt: '2025-11-26T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse release
+    tags: [version]
+  - id: v2-5-update
+    title: { zh-CN: 绝区零 2.5「夜之燃料」版本更新, en: Zenless Zone Zero 2.5 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2025-12-30' }
+        recordedAt: '2025-12-19T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse announcement
+    tags: [version]
+  - id: v2-6-update
+    title: { zh-CN: 绝区零 2.6「旧梦的安可」版本更新, en: Zenless Zone Zero 2.6 Update }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-02-06' }
+        recordedAt: '2026-02-06T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse release
+    tags: [version]
+  - id: v2-7-update
+    title: { zh-CN: 绝区零 2.7「勇者不会沉湎于过去」版本更新, en: Zenless Zone Zero 2.7 Update }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2026-03-24T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-03-22T00:00:00Z'
+        confidence: confirmed
+        source: Version 2.7 Pre-Download & Update Notice
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/44286983
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: v2-8-update
+    title: { zh-CN: 绝区零 2.8「新·厄里丹的落日」版本更新, en: Zenless Zone Zero 2.8 Update }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2026-05-06T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-05-04T00:00:00Z'
+        confidence: confirmed
+        source: Version 2.8 Pre-Download & Update Notice
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/44915538
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: v3-0-update
+    title: { zh-CN: 绝区零 3.0「梦游者的自白」版本更新, en: Zenless Zone Zero 3.0 Update }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2026-06-17T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-06-15T00:00:00Z'
+        confidence: confirmed
+        source: Version 3.0 Pre-Download & Update Notice
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/45467132
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: v3-1-update
+    title: { zh-CN: 绝区零 3.1「漫长的告别」版本更新, en: Zenless Zone Zero 3.1 Update }
+    schedule:
+      - id: maintenance
+        value:
+          kind: datetime
+          dateTime: '2026-07-29T06:00:00+08:00'
+          timezone: Asia/Shanghai
+        recordedAt: '2026-07-28T00:00:00Z'
+        confidence: confirmed
+        source: Version 3.1 Update Announcement
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://www.hoyolab.com/article/46037106
+        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+  - id: v3-2-special-program
+    title: { zh-CN: 绝区零 3.2「他们的秘密往事」版本前瞻, en: Zenless Zone Zero 3.2 Special Program }
+    schedule:
+      - id: broadcast
+        value: { kind: exact, date: '2026-08-28' }
+        recordedAt: '2026-08-28T00:00:00Z'
+        confidence: confirmed
+        source: HoYoverse Version 3.2 announcement
+    tags: [livestream]
+  - id: v3-2-update
+    title: { zh-CN: 绝区零 3.2「他们的秘密往事」版本更新, en: Zenless Zone Zero 3.2 Update }
+    summary: { zh-CN: 新增「装甲」特性角色等内容。, en: Introduces the new Armorer specialty. }
+    schedule:
+      - id: release
+        value: { kind: exact, date: '2026-09-09' }
+        recordedAt: '2026-08-28T00:00:00Z'
+        confidence: confirmed
+        source: miHoYo / HoYoverse announcement
+    tags: [version]
+    evidence:
+      - kind: url
+        value: https://zenless.hoyoverse.com/
+        label: { zh-CN: 绝区零官网, en: Official site }
+  - id: deadly-assault-cycle
+    title: { zh-CN: 危局强袭战周期刷新, en: Deadly Assault Rotation }
+    summary: { zh-CN: 高难 Boss 挑战的轮换节点；具体敌人和结算时间以版本内公告为准。, en: Rotating high-difficulty boss challenge. }
+    schedule:
+      - id: tracked-from
+        value: { kind: exact, date: '2026-06-19' }
+        recordedAt: '2026-06-17T00:00:00Z'
+        confidence: confirmed
+        source: Version 3.0 event schedule
+    recurrence:
+      freq: custom
+      interval: 1
+      timezone: Asia/Shanghai
+    tags: [endgame]
+    evidence:
+      - kind: note
+        value: 危局强袭战实际轮换并非适合用固定月日推算；该条作为关注节点，维护时应按官方版本公告更新具体周期。
+status: active

@@ -127,8 +127,8 @@ events:
       - { kind: image, path: 'https://i.ytimg.com/vi/8lvhVy-XI80/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Medjehtiqedti Bound 官方主视觉, en: Medjehtiqedti Bound official key visual } }
   - id: vector-breakthrough-2
     title:
-      zh-CN: 「Vector Breakthrough #2」开启
-      en: Vector Breakthrough #2 Trial from Misery
+      zh-CN: '「Vector Breakthrough #2」开启'
+      en: 'Vector Breakthrough #2 Trial from Misery'
     schedule:
       - id: start
         value: { kind: datetime, dateTime: '2026-07-30T08:00:00-07:00', timezone: America/Los_Angeles }
@@ -140,7 +140,7 @@ events:
       - { kind: url, value: 'https://www.arknights.global/news/4084' }
       - { kind: url, value: 'https://www.youtube.com/watch?v=Uvs9VCxWPKo' }
     media:
-      - { kind: image, path: 'https://i.ytimg.com/vi/Uvs9VCxWPKo/maxresdefault.jpg', alt: { zh-CN: 明日方舟 Vector Breakthrough #2 官方主视觉, en: Vector Breakthrough #2 official key visual } }
+      - { kind: image, path: 'https://i.ytimg.com/vi/Uvs9VCxWPKo/maxresdefault.jpg', alt: { zh-CN: '明日方舟 Vector Breakthrough #2 官方主视觉', en: 'Vector Breakthrough #2 official key visual' } }
   - id: stronghold-protocol-alliance-part-2
     title:
       zh-CN: 「Stronghold Protocol：Alliance」第二期开启

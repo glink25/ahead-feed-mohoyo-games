@@ -1,0 +1,108 @@
+oefVersion: '0.1'
+kind: event-feed
+oefSearch: oef-search-v1
+id: mohoyo-nodusfall
+name:
+  zh-CN: 源初之结大事件日历
+  en: NODUSFALL Major Events
+description:
+  zh-CN: 米哈游新作《源初之结》（NODUSFALL）的官宣、测试招募、测试与上线进度。未公布日期的节点明确保持未知。
+  en: Announcement, beta recruitment, tests and release milestones for HoYoverse's NODUSFALL.
+primaryLanguage: zh-CN
+tags:
+  - id: reveal
+    label: { zh-CN: 官方公开, en: Reveal }
+  - id: test
+    label: { zh-CN: 测试, en: Test }
+  - id: release
+    label: { zh-CN: 上线, en: Release }
+  - id: development
+    label: { zh-CN: 开发进展, en: Development }
+events:
+  - id: trademark-and-account-signal
+    title: { zh-CN: 「源初之结 / NODUSFALL」商标与官方账号线索出现, en: NODUSFALL Trademark and Account Signals }
+    summary: { zh-CN: 首曝前的公开线索，彼时官方尚未正式确认产品身份。, en: Public pre-reveal signals before formal announcement. }
+    schedule:
+      - id: public-signal
+        value: { kind: exact, date: '2026-05-21' }
+        recordedAt: '2026-05-21T00:00:00Z'
+        confidence: likely
+        source: Public trademark records and newly registered social accounts
+    tags: [development]
+    evidence:
+      - kind: note
+        value: 该节点用于保留产品曝光史，不等同于当时已有正式官宣。
+  - id: beta-recruitment-open
+    title: { zh-CN: 《源初之结》测试意向/资格招募入口开放, en: NODUSFALL Test Recruitment Opens }
+    summary: { zh-CN: 官网预约与测试相关入口开始出现；具体测试批次、日期、地区和资格发放仍未公开。, en: Registration path is available, while test dates and regions remain unannounced. }
+    schedule:
+      - id: recruitment-signal
+        value: { kind: exact, date: '2026-08-21' }
+        recordedAt: '2026-08-22T00:00:00Z'
+        confidence: likely
+        source: Official registration flow reported by multiple outlets
+    tags: [test]
+    evidence:
+      - kind: url
+        value: https://nodusfall.hoyoverse.com/
+        label: { zh-CN: NODUSFALL 官方网站, en: Official NODUSFALL site }
+  - id: gamescom-2026-reveal
+    title: { zh-CN: 《源初之结》全球首曝, en: NODUSFALL Global Reveal }
+    summary: { zh-CN: 在 2026 科隆游戏展开幕之夜正式公开首支宣传片；官方说明画面包含实机演示与 UE5 引擎内过场。, en: Global reveal at gamescom Opening Night Live with gameplay and UE5 in-engine footage. }
+    schedule:
+      - id: reveal
+        value: { kind: exact, date: '2026-08-26' }
+        recordedAt: '2026-08-26T00:00:00Z'
+        confidence: confirmed
+        source: Official NODUSFALL / 源初之结 channels
+    tags: [reveal]
+    evidence:
+      - kind: url
+        value: https://www.bilibili.com/video/BV1erhL6EE6k/
+        label: { zh-CN: 官方首曝 PV, en: Official reveal trailer }
+      - kind: url
+        value: https://nodusfall.hoyoverse.com/
+        label: { zh-CN: 官方网站, en: Official site }
+  - id: gamescom-2026-media-preview
+    title: { zh-CN: 《源初之结》科隆展媒体体验与开发团队信息集中释出, en: NODUSFALL Gamescom Media Preview }
+    summary: { zh-CN: 首曝后的媒体采访进一步确认多人 PvE 共斗、免费游玩等方向；具体商业化与平台细节仍以后续官方公告为准。, en: Post-reveal interviews clarified multiplayer PvE and free-to-play direction. }
+    schedule:
+      - id: press-wave
+        value: { kind: exact, date: '2026-08-28' }
+        recordedAt: '2026-08-28T00:00:00Z'
+        confidence: confirmed
+        source: Gamescom developer interviews
+    tags: [development]
+  - id: next-public-test
+    title: { zh-CN: 《源初之结》下一次公开测试, en: NODUSFALL Next Public Test }
+    summary: { zh-CN: 截至 2026-09-06，官方已提供预约/测试关注入口，但未公布公开测试日期、地区或平台范围。不要采用“预计某月测试”的非官方推算。, en: As of 2026-09-06, no public beta date, region or platform scope has been announced. }
+    schedule:
+      - id: awaiting-date
+        value:
+          kind: unknown
+          note:
+            zh-CN: 测试时间待官方公布；已预约的玩家应关注官网、官方社媒及邮件。
+            en: Test date TBA; follow official site, social channels and email.
+        recordedAt: '2026-09-06T01:44:00Z'
+        confidence: confirmed
+        source: Official site contains registration/test-access messaging without a dated public test window
+    tags: [test]
+    evidence:
+      - kind: url
+        value: https://nodusfall.hoyoverse.com/
+        label: { zh-CN: 官方网站, en: Official site }
+  - id: launch
+    title: { zh-CN: 《源初之结》正式上线, en: NODUSFALL Launch }
+    summary: { zh-CN: 截至 2026-09-06 未官宣上线日期；网络流传的 2027 等年份预测不写入确定档期。, en: No official launch date as of 2026-09-06. }
+    schedule:
+      - id: awaiting-date
+        value:
+          kind: unknown
+          note:
+            zh-CN: 正式上线时间待官方公布。
+            en: Release date to be announced.
+        recordedAt: '2026-09-06T01:44:00Z'
+        confidence: confirmed
+        source: Official NODUSFALL channels
+    tags: [release]
+status: active

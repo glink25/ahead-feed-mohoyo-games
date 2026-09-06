@@ -32,15 +32,10 @@ events:
         source: Public trademark records and newly registered social accounts
     tags: [development]
     evidence:
-      - kind: note
-        value: 该节点用于保留产品曝光史，不等同于当时已有正式官宣。
-      - kind: url
-        value: https://www.youtube.com/watch?v=-Po_n2PrOT4
-        label: { zh-CN: NODUSFALL 官方 YouTube 图片来源, en: Official NODUSFALL YouTube image source }
-    media: &nodusfall_media
-      - kind: image
-        path: https://i.ytimg.com/vi/-Po_n2PrOT4/hqdefault.jpg
-        alt: { zh-CN: NODUSFALL 官方首曝视频缩略图, en: NODUSFALL official reveal trailer thumbnail }
+      - { kind: note, value: 该节点用于保留产品曝光史，不等同于当时已有正式官宣。 }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=-Po_n2PrOT4' }
+    media:
+      - &nodusfall_official { kind: image, path: 'https://i.ytimg.com/vi/-Po_n2PrOT4/maxresdefault.jpg', alt: { zh-CN: NODUSFALL 官方首曝主视觉, en: NODUSFALL official reveal key visual } }
   - id: beta-recruitment-open
     title: { zh-CN: 《源初之结》测试意向/资格招募入口开放, en: NODUSFALL Test Recruitment Opens }
     summary:
@@ -54,7 +49,7 @@ events:
         source: Official registration flow reported by multiple outlets
     tags: [test]
     evidence: [{ kind: url, value: 'https://nodusfall.hoyoverse.com/' }]
-    media: *nodusfall_media
+    media: [*nodusfall_official]
   - id: gamescom-2026-reveal
     title: { zh-CN: 《源初之结》全球首曝, en: NODUSFALL Global Reveal }
     summary:
@@ -68,11 +63,11 @@ events:
         source: Official NODUSFALL / 源初之结 channels
     tags: [reveal]
     evidence:
-      - kind: url
-        value: https://www.bilibili.com/video/BV1erhL6EE6k/
-      - kind: url
-        value: https://nodusfall.hoyoverse.com/
-    media: *nodusfall_media
+      - { kind: url, value: 'https://www.bilibili.com/video/BV1erhL6EE6k/' }
+      - { kind: url, value: 'https://nodusfall.hoyoverse.com/' }
+      - { kind: url, value: 'https://www.youtube.com/watch?v=qf-g5aAgOGI' }
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/qf-g5aAgOGI/maxresdefault.jpg', alt: { zh-CN: NODUSFALL 科隆游戏展首曝主视觉, en: NODUSFALL gamescom reveal key visual } }
   - id: gamescom-2026-media-preview
     title: { zh-CN: 《源初之结》科隆展媒体体验与开发团队信息集中释出, en: NODUSFALL Gamescom Media Preview }
     summary:
@@ -85,7 +80,9 @@ events:
         confidence: confirmed
         source: Gamescom developer interviews
     tags: [development]
-    media: *nodusfall_media
+    evidence: [{ kind: url, value: 'https://www.youtube.com/watch?v=qf-g5aAgOGI' }]
+    media:
+      - { kind: image, path: 'https://i.ytimg.com/vi/qf-g5aAgOGI/maxresdefault.jpg', alt: { zh-CN: NODUSFALL 科隆游戏展媒体展示主视觉, en: NODUSFALL gamescom media preview visual } }
   - id: next-public-test
     title: { zh-CN: 《源初之结》下一次公开测试, en: NODUSFALL Next Public Test }
     summary:
@@ -103,7 +100,7 @@ events:
         source: Official site contains registration/test-access messaging without a dated public test window
     tags: [test]
     evidence: [{ kind: url, value: 'https://nodusfall.hoyoverse.com/' }]
-    media: *nodusfall_media
+    media: [*nodusfall_official]
   - id: launch
     title: { zh-CN: 《源初之结》正式上线, en: NODUSFALL Launch }
     summary:
@@ -120,4 +117,5 @@ events:
         confidence: confirmed
         source: Official NODUSFALL channels
     tags: [release]
-    media: *nodusfall_media
+    evidence: [{ kind: url, value: 'https://nodusfall.hoyoverse.com/' }]
+    media: [*nodusfall_official]

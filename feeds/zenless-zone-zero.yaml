@@ -21,10 +21,7 @@ events:
     title: { zh-CN: 绝区零 2.3 版本更新, en: Zenless Zone Zero 2.3 Update }
     schedule:
       - id: maintenance
-        value:
-          kind: datetime
-          dateTime: '2025-10-15T06:00:00+08:00'
-          timezone: Asia/Shanghai
+        value: { kind: datetime, dateTime: '2025-10-15T06:00:00+08:00', timezone: Asia/Shanghai }
         recordedAt: '2025-10-13T00:00:00Z'
         confidence: confirmed
         source: Version 2.3 Pre-Download & Update Notice
@@ -32,7 +29,13 @@ events:
     evidence:
       - kind: url
         value: https://www.hoyolab.com/article/41722094
-        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+      - kind: url
+        value: https://www.youtube.com/watch?v=ew9nVnCl8AY
+        label: { zh-CN: 绝区零官方 YouTube 图片来源, en: Official Zenless Zone Zero YouTube image source }
+    media: &zzz_media
+      - kind: image
+        path: https://i.ytimg.com/vi/ew9nVnCl8AY/hqdefault.jpg
+        alt: { zh-CN: 绝区零官方宣传片缩略图, en: Zenless Zone Zero official trailer thumbnail }
   - id: v2-4-update
     title: { zh-CN: 绝区零 2.4 版本更新, en: Zenless Zone Zero 2.4 Update }
     schedule:
@@ -42,6 +45,7 @@ events:
         confidence: confirmed
         source: HoYoverse release
     tags: [version]
+    media: *zzz_media
   - id: v2-5-update
     title: { zh-CN: 绝区零 2.5 版本更新, en: Zenless Zone Zero 2.5 Update }
     schedule:
@@ -51,6 +55,7 @@ events:
         confidence: confirmed
         source: HoYoverse announcement
     tags: [version]
+    media: *zzz_media
   - id: v2-6-update
     title: { zh-CN: 绝区零 2.6 版本更新, en: Zenless Zone Zero 2.6 Update }
     schedule:
@@ -60,70 +65,51 @@ events:
         confidence: confirmed
         source: HoYoverse release
     tags: [version]
+    media: *zzz_media
   - id: v2-7-update
     title: { zh-CN: 绝区零 2.7 版本更新, en: Zenless Zone Zero 2.7 Update }
     schedule:
       - id: maintenance
-        value:
-          kind: datetime
-          dateTime: '2026-03-24T06:00:00+08:00'
-          timezone: Asia/Shanghai
+        value: { kind: datetime, dateTime: '2026-03-24T06:00:00+08:00', timezone: Asia/Shanghai }
         recordedAt: '2026-03-22T00:00:00Z'
         confidence: confirmed
         source: Version 2.7 Pre-Download & Update Notice
     tags: [version]
-    evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/44286983
-        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44286983' }]
+    media: *zzz_media
   - id: v2-8-update
     title: { zh-CN: 绝区零 2.8 版本更新, en: Zenless Zone Zero 2.8 Update }
     schedule:
       - id: maintenance
-        value:
-          kind: datetime
-          dateTime: '2026-05-06T06:00:00+08:00'
-          timezone: Asia/Shanghai
+        value: { kind: datetime, dateTime: '2026-05-06T06:00:00+08:00', timezone: Asia/Shanghai }
         recordedAt: '2026-05-04T00:00:00Z'
         confidence: confirmed
         source: Version 2.8 Pre-Download & Update Notice
     tags: [version]
-    evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/44915538
-        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/44915538' }]
+    media: *zzz_media
   - id: v3-0-update
     title: { zh-CN: 绝区零 3.0 版本更新, en: Zenless Zone Zero 3.0 Update }
     schedule:
       - id: maintenance
-        value:
-          kind: datetime
-          dateTime: '2026-06-17T06:00:00+08:00'
-          timezone: Asia/Shanghai
+        value: { kind: datetime, dateTime: '2026-06-17T06:00:00+08:00', timezone: Asia/Shanghai }
         recordedAt: '2026-06-15T00:00:00Z'
         confidence: confirmed
         source: Version 3.0 Pre-Download & Update Notice
     tags: [version]
-    evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/45467132
-        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/45467132' }]
+    media: *zzz_media
   - id: v3-1-update
     title: { zh-CN: 绝区零 3.1 版本更新, en: Zenless Zone Zero 3.1 Update }
     schedule:
       - id: maintenance
-        value:
-          kind: datetime
-          dateTime: '2026-07-29T06:00:00+08:00'
-          timezone: Asia/Shanghai
+        value: { kind: datetime, dateTime: '2026-07-29T06:00:00+08:00', timezone: Asia/Shanghai }
         recordedAt: '2026-07-28T00:00:00Z'
         confidence: confirmed
         source: Version 3.1 Update Announcement
     tags: [version]
-    evidence:
-      - kind: url
-        value: https://www.hoyolab.com/article/46037106
-        label: { zh-CN: HoYoLAB 官方公告, en: Official HoYoLAB post }
+    evidence: [{ kind: url, value: 'https://www.hoyolab.com/article/46037106' }]
+    media: *zzz_media
   - id: v3-2-special-program
     title: { zh-CN: 绝区零 3.2 版本前瞻, en: Zenless Zone Zero 3.2 Special Program }
     schedule:
@@ -133,6 +119,7 @@ events:
         confidence: confirmed
         source: HoYoverse Version 3.2 announcement
     tags: [livestream]
+    media: *zzz_media
   - id: v3-2-update
     title: { zh-CN: 绝区零 3.2 版本更新, en: Zenless Zone Zero 3.2 Update }
     summary: { zh-CN: 已官宣于 9 月 9 日更新。, en: Announced for September 9. }
@@ -143,13 +130,13 @@ events:
         confidence: confirmed
         source: miHoYo / HoYoverse announcement
     tags: [version]
-    evidence:
-      - kind: url
-        value: https://zenless.hoyoverse.com/
-        label: { zh-CN: 绝区零官网, en: Official site }
+    evidence: [{ kind: url, value: 'https://zenless.hoyoverse.com/' }]
+    media: *zzz_media
   - id: deadly-assault-3-0
     title: { zh-CN: 危局强袭战 3.0 周期开始, en: Deadly Assault 3.0 Rotation }
-    summary: { zh-CN: 高难 Boss 挑战轮换节点；后续周期应按每个版本官方活动表逐条维护，不进行固定周期猜测。, en: Endgame boss rotation; future cycles should be entered from official schedules rather than inferred. }
+    summary:
+      zh-CN: 高难 Boss 挑战轮换节点；后续周期应按每个版本官方活动表逐条维护，不进行固定周期猜测。
+      en: Endgame boss rotation; future cycles should be entered from official schedules rather than inferred.
     schedule:
       - id: start
         value: { kind: exact, date: '2026-06-19' }
@@ -157,6 +144,4 @@ events:
         confidence: confirmed
         source: Version 3.0 event schedule
     tags: [endgame]
-    evidence:
-      - kind: note
-        value: 危局强袭战不使用固定 recurrence 推算，以免版本调整后产生假日期。
+    media: *zzz_media
